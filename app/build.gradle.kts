@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sunnyweather.Android"
+    namespace = "com.sunnyweather.android"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.sunnyweather.Android"
+        applicationId = "com.sunnyweather.android"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -38,6 +38,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -66,4 +67,18 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(libs.androidx.recyclerview.v132)
+    implementation(libs.androidx.lifecycle.extensions)
+//    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.material.v1120)
+    implementation(libs.androidx.swiperefreshlayout)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+//    implementation (libs.androidx.lifecycle.livedata.ktx.v260) // Use the latest version
+    implementation (libs.androidx.lifecycle.livedata.ktx)
+
+
 }

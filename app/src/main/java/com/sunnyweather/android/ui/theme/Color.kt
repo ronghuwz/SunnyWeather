@@ -1,4 +1,4 @@
-package com.sunnyweather.Android.ui.theme
+package com.sunnyweather.android.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
